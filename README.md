@@ -1,4 +1,4 @@
-# Portfolio web site (Eli)
+# Portfolio web site (Elizabeth Ispravnikova)
 
 VueJs + router. Full information about skills, contacts, examples of a projects and resume.
 
