@@ -16,9 +16,9 @@
     </v-btn>
 
     <app-bar />
-    
+
     <router-view />
-    <footer-component/>
+    <footer-component />
   </v-app>
 </template>
 
@@ -28,14 +28,14 @@ import AppBar from "@/components/AppBar.vue";
 
 export default {
   name: "App",
-  metaInfo:{
+  metaInfo: {
     title: "Portfolio",
     titleTemplate: "Elizabeth Ispravnikova - %s",
-    meta: [{ property: "og:title", content: "Elizabeth Ispravnikova"}]
+    meta: [{ property: "og:title", content: "Elizabeth Ispravnikova" }],
   },
   components: {
     AppBar,
-    FooterComponent
+    FooterComponent,
   },
   data() {
     return {
@@ -48,14 +48,38 @@ export default {
     },
   },
   methods: {
-    onScroll (e) {
-      if (typeof window === 'undefined') return
-      const top = window.pageYOffset ||   e.target.scrollTop || 0
-      this.fab = top > 20
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 20;
     },
-    toTop () {
-      this.$vuetify.goTo(0)
-    }
-  }
+    toTop() {
+      this.$vuetify.goTo(0);
+    },
+  },
 };
 </script>
+
+<style>
+@font-face {
+  font-family: "Helvetica_Original";
+  src: url("@/assets/fonts/helveticablackoriginal_bold.otf");
+}
+@font-face {
+  font-family: "Helvetica_Greek";
+  src: url("@/assets/fonts/Helvetica Greek Upright.ttf");
+}
+.main-header {
+  font-family: Helvetica_Original sans-serif !important;
+  line-height: 6rem;
+  letter-spacing: -0.015625em;
+  font-size: 6rem;
+}
+.page-header {
+  font-family: Helvetica_Greek sans-serif !important;
+  font-size: 3.75rem !important;
+  font-weight: 300;
+  line-height: 3.75rem;
+  letter-spacing: -0.0083333333em !important;
+}
+</style>

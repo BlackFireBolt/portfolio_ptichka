@@ -13,7 +13,9 @@
                 ><p class="grey--text text-h6">3D - Graphic design</p></v-col
               >
               <v-col cols="12"
-                ><p class="white--text text-h1 font-weight-bold">Design Portfolio</p></v-col
+                ><p class="white--text font-weight-black header">
+                  Design Portfolio
+                </p></v-col
               >
               <v-col cols="12"
                 ><p class="grey--text text-body-1">
@@ -22,10 +24,15 @@
                   build new creative design concepts.
                 </p></v-col
               >
-              
+
               <v-col cols="12">
-                <v-btn rounded color="white" :href="`${publicPath}Resume Elizabeth Ispravnikava.pdf`" target="_blank"
-        >Download resume</v-btn>
+                <v-btn
+                  rounded
+                  color="white"
+                  :href="`${publicPath}cv.pdf`"
+                  target="_blank"
+                  >Download resume</v-btn
+                >
               </v-col></v-row
             >
           </v-sheet>
@@ -38,10 +45,18 @@
 <script>
 export default {
   name: "HeaderComponent",
-  data(){
+  data() {
     return {
-        publicPath: process.env.BASE_URL,
-    }
+      publicPath: process.env.BASE_URL,
+    };
   },
 };
 </script>
+<style scoped>
+.header {
+  line-height: 6rem;
+  letter-spacing: -0.015625em;
+  font-family: Helvetica_Original, sans-serif;
+  font-size: 6rem;
+}
+</style>

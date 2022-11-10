@@ -1,7 +1,11 @@
 <template>
-  <v-main style="background: #e3e3e3" >
+  <v-main style="background: #e3e3e3">
     <p class="text-h2 text-center my-10">3D Experience</p>
-    <v-container v-for="(image, index) in images" :key="image.link" :class="index==images.length-1? 'mb-10': 'mb-0' ">
+    <v-container
+      v-for="(image, index) in images"
+      :key="image.link"
+      :class="index == images.length - 1 ? 'mb-10' : 'mb-0'"
+    >
       <v-lazy
         v-model="image.active"
         v-if="index != 3"
@@ -13,7 +17,7 @@
       >
         <v-img contain max-height="80vh" :src="`${image.link}`"> </v-img
       ></v-lazy>
-      <v-lazy
+      <!--<v-lazy
         v-else
         v-model="additionalsActive"
         :options="{
@@ -37,7 +41,7 @@
               :src="`${additionals[1].link}`"
             ></v-img>
           </v-col> </v-row
-      ></v-lazy>
+      ></v-lazy>-->
     </v-container>
   </v-main>
 </template>

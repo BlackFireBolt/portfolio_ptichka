@@ -29,7 +29,6 @@ export default {
   color: white;
   padding-top: 50px;
   position: relative;
-  z-index: 9;
   line-height: 100%;
 }
 .message p small {
