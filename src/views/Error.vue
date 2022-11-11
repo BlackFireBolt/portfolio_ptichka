@@ -15,7 +15,13 @@
 <script>
 export default {
   name: "ErrorPage",
-
+  metaInfo() {
+    return {
+      title: "Error",
+      titleTemplate: "Elizabeth Ispravnikova - %s",
+      meta: [{ property: "og:title", content: "Elizabeth Ispravnikova" }],
+    };
+  },
 };
 </script>
 
