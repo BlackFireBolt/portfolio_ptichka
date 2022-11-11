@@ -21,8 +21,9 @@
             I constantly get new knowledge and skills, and do not stop impoving.
             I get most of the knowledge in online courses - it's very convinient
             and saves a lot of time, whish is of great importance in the modern
-            world;)<br> Nothing is impossible for me, I can study any information
-            and apply it in my work.
+            world;)<br />
+            Nothing is impossible for me, I can study any information and apply
+            it in my work.
           </p>
         </v-col>
       </v-row></v-container
@@ -33,10 +34,12 @@
 <script>
 export default {
   name: "AboutPage",
-  metaInfo:{
-    title: "About",
-    titleTemplate: "Elizabeth Ispravnikova - %s",
-    meta: [{ property: "og:title", content: "Elizabeth Ispravnikova"}]
+  metaInfo() {
+    return {
+      title: "About",
+      titleTemplate: "Elizabeth Ispravnikova - %s",
+      meta: [{ property: "og:title", content: "Elizabeth Ispravnikova" }],
+    };
   },
 };
 </script>

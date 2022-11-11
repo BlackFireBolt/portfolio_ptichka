@@ -28,10 +28,16 @@ import AppBar from "@/components/AppBar.vue";
 
 export default {
   name: "App",
-  metaInfo: {
-    title: "Portfolio",
-    titleTemplate: "Elizabeth Ispravnikova - %s",
-    meta: [{ property: "og:title", content: "Elizabeth Ispravnikova" }],
+  metaInfo() {
+    return {
+      title: "Portfolio",
+      titleTemplate: "Elizabeth Ispravnikova - %s",
+      meta: [
+        { property: "og:title", content: "Elizabeth Ispravnikova Portfolio" },
+        { name: 'description', content: 'Full information about skills, contacts, examples of a projects and resume of Elizabeth Ispravnikova.'},
+        { property: 'og:description', content: 'Full information about skills, contacts, examples of a projects and resume of Elizabeth Ispravnikova.'},
+      ],
+    };
   },
   components: {
     AppBar,
