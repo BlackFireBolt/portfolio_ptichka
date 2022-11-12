@@ -3,11 +3,11 @@
     <v-container>
       <v-row>
         <v-col md="5"
-          ><v-img max-height="100vh" src="@/assets/img/about_foto.jpg"> </v-img
+          ><v-img height="100vh" src="@/assets/img/about_foto.jpg"> </v-img
         ></v-col>
         <v-col md="7">
           <p class="text-h6 font-weight-bold">Digital Designer</p>
-          <p class="text-h1">Elizabeth Ispravnikova</p>
+          <p class="text-md-h2 text-h3">Elizabeth Ispravnikova</p>
           <p class="font-weight-bold">
             I'm a 3D and Graphic designer based in Poland. I have extensive
             experience in varios fields of design. Such as graphic design, 3D

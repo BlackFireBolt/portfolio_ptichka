@@ -1,5 +1,5 @@
 <template>
-  <v-app :style="{ background: $vuetify.theme.themes[theme].background }">
+  <v-app class="my-application" :style="{ background: $vuetify.theme.themes[theme].background }">
     <v-btn
       v-scroll="onScroll"
       v-show="fab"
@@ -66,26 +66,27 @@ export default {
 };
 </script>
 
-<style>
-@font-face {
-  font-family: "Helvetica_Original";
-  src: url("@/assets/fonts/helveticablackoriginal_bold.otf");
-}
-@font-face {
-  font-family: "Helvetica_Greek";
-  src: url("@/assets/fonts/Helvetica Greek Upright.ttf");
-}
-.main-header {
-  font-family: Helvetica_Original sans-serif !important;
-  line-height: 6rem;
-  letter-spacing: -0.015625em;
-  font-size: 6rem;
-}
-.page-header {
-  font-family: Helvetica_Greek sans-serif !important;
-  font-size: 3.75rem !important;
-  font-weight: 300;
-  line-height: 3.75rem;
-  letter-spacing: -0.0083333333em !important;
-}
+
+<style lang="scss">
+
+  @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+  $font-family: 'Train One', cursive;
+  @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+  $font-family-second: 'Mate SC', serif;
+  .headline,
+  .my-application {
+    [class*='text-md-h1'] {
+      font-family: $font-family, sans-serif !important;
+    }
+  
+    [class*='text-h2'] {
+      font-family: $font-family, sans-serif !important;
+    }
+
+    [class*='text-h3'] {
+      font-family: $font-family-second, sans-serif !important;
+    }
+    font-family: '$font-family', sans-serif !important;
+  }
 </style>
+

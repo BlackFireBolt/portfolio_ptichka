@@ -23,8 +23,8 @@
           alt="Liza Isparvnikova"
           class="mx-10 mt-2"
           :src="colorAppBar.logoPath"
-          max-height="140"
-          max-width="120"
+          height="140"
+          width="120"
           contain
         />
       </router-link>

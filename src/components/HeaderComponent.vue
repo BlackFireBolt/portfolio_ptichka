@@ -13,7 +13,7 @@
                 ><p class="grey--text text-h6">3D - Graphic design</p></v-col
               >
               <v-col cols="12"
-                ><p class="white--text font-weight-black header">
+                ><p class="white--text font-weight-black text-md-h1 text-h2">
                   Design Portfolio
                 </p></v-col
               >
